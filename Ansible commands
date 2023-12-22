@@ -29,8 +29,7 @@ Part 2 install Ansible and requies tools in ansible_master
 Step 4 go to ansible_master container  update the ubuntu and install some dependencies and ansible
 
 docker exec -it ansible_master bash
-apt update
-apt install python-is-python3 ansible vim iputils-ping openssh-client -y
+apt update && apt install python-is-python3 ansible vim iputils-ping openssh-client -y
         Geographical area 6 city 44
 ansible --version
 
@@ -43,8 +42,7 @@ if like this ignore this page
 
 Reinstall Ansible with below command 
 
- apt remove ansible -y
- apt update
+ apt remove ansible -y && apt update
  apt install software-properties-common
  add-apt-repository --yes --update ppa:ansible/ansible
  
